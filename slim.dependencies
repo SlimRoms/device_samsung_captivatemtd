@@ -7,7 +7,7 @@
   {
     "repository": "SlimRoms/device_samsung_aries-common",
     "target_path": "device/samsung/aries-common",
-    "branch": "jellybean"
+    "branch": "jb"
   },
   {
     "repository": "SlimRoms/proprietary_vendor_samsung",
