@@ -10,8 +10,8 @@
     "branch": "jb"
   },
   {
-    "repository": "SlimRoms/proprietary_vendor_samsung",
-    "target_path": "vendor/samsung",
+    "repository": "SlimRoms/device_samsung_galaxysmtd",
+    "target_path": "device/samsung/galaxysmtd",
     "branch": "jb"
     }
 ]
