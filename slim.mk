@@ -8,21 +8,22 @@ PRODUCT_RELEASE_NAME := I897
 $(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/galaxysmtd/full_galaxysmtd.mk)
+$(call inherit-product, device/samsung/captivatemtd/full_captivatemtd.mk)
 
 # Inherit device settings
 $(call inherit-product, vendor/slim/config/common_sgs.mk)
 
 #copy kernel and modules
 PRODUCT_COPY_FILES += \
-	device/samsung/captivatemtd/prebuilt/kernel/boot.img:system/slimkernel/boot.img \
-	device/samsung/captivatemtd/prebuilt/kernel/boot.img:kernel \
         device/samsung/aries-common/recovery.fstab:ramdisk.img \
         device/samsung/aries-common/recovery.fstab:recovery/root/etc/recovery.fstab \
-	device/samsung/captivatemtd/prebuilt/kernel/system/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
-	device/samsung/captivatemtd/prebuilt/kernel/system/lib/modules/cifs.ko:system/lib/modules/cifs.ko \
-	device/samsung/captivatemtd/prebuilt/kernel/system/lib/modules/mls_utf8.ko:system/lib/modules/mls_utf8.ko \
-	device/samsung/captivatemtd/prebuilt/kernel/system/lib/modules/nls_utf8.ko:system/lib/modules/nls_utf8.ko
+#	device/samsung/captivatemtd/prebuilt/kernel/boot.img:system/slimkernel/boot.img \
+#	device/samsung/captivatemtd/prebuilt/kernel/boot.img:kernel \
+#	device/samsung/captivatemtd/prebuilt/kernel/system/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
+#	device/samsung/captivatemtd/prebuilt/kernel/system/lib/modules/cifs.ko:system/lib/modules/cifs.ko \
+#	device/samsung/captivatemtd/prebuilt/kernel/system/lib/modules/mls_utf8.ko:system/lib/modules/mls_utf8.ko \
+#	device/samsung/captivatemtd/prebuilt/kernel/system/lib/modules/nls_utf8.ko:system/lib/modules/nls_utf8.ko
+
 
 PRODUCT_COPY_FILES +=  \
     vendor/slim/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
@@ -32,7 +33,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #copy 00check
 PRODUCT_COPY_FILES += \
-	device/samsung/galaxysmtd/prebuilt/kernel/system/etc/init.d/00check:system/etc/init.d/00check
+	device/samsung/captivatemtd/prebuilt/kernel/system/etc/init.d/00check:system/etc/init.d/00check
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := captivatemtd

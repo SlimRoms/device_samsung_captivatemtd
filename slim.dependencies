@@ -10,8 +10,13 @@
     "branch": "jb"
   },
   {
-    "repository": "SlimRoms/device_samsung_galaxysmtd",
-    "target_path": "device/samsung/galaxysmtd",
-    "branch": "jb"
+    "repository": "stratosk/samsung-kernel-aries",
+    "target_path": "kernel/samsung/samsung-kernel-aries",
+    "branch": "jellybean"
+  },
+  {
+    "repository": "stratosk/ics-ramdisk",
+    "target_path": "kernel/samsung/ics-ramdisk",
+    "branch": "master"
   }
 ]

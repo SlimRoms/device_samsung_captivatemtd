@@ -17,8 +17,11 @@
 # Product-specific compile-time definitions.
 #
 
-# Kernel Config
-TARGET_KERNEL_CONFIG := cyanogenmod_captivatemtd_defconfig
+# Inline kernel building
+TARGET_KERNEL_SOURCE := kernel/samsung/samsung-kernel-aries
+
+
+TARGET_KERNEL_CONFIG := semaphore_captivate_defconfig
 
 TARGET_OTA_ASSERT_DEVICE := captivate,captivatemtd,SGH-I896,SGH-I897
 
