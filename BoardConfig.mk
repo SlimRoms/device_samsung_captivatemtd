@@ -22,6 +22,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/samsung-kernel-aries
 
 
 TARGET_KERNEL_CONFIG := semaphore_captivate_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
 
 TARGET_OTA_ASSERT_DEVICE := captivate,captivatemtd,SGH-I896,SGH-I897
 
