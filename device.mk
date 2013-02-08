@@ -35,6 +35,10 @@
 # but not to the original vendor tree. Be sure to update both.
 
 # These are the hardware-specific configuration files
+DEVICE_PACKAGE_OVERLAYS += \
+	device/samsung/captivatemtd/overlay
+
+# These are the hardware-specific configuration files
 PRODUCT_COPY_FILES = \
 	device/samsung/captivatemtd/asound.conf:system/etc/asound.conf
 
