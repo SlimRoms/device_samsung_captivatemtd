@@ -19,10 +19,6 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.camera.res=5MP
 
-#copy 00check
-PRODUCT_COPY_FILES += \
-    device/samsung/captivatemtd/prebuilt/init.d/00check:system/etc/init.d/00check
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := captivatemtd
 PRODUCT_NAME := slim_captivatemtd
@@ -31,4 +27,3 @@ PRODUCT_MODEL := SGH-I897
 
 #Set build fingerprint / ID / Prduct Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I897 TARGET_DEVICE=SGH-I897 BUILD_FINGERPRINT=samsung/SGH-I897/SGH-I897:2.3.5/GINGERBREAD/UCKK4:user/release-keys PRIVATE_BUILD_DESC="SGH-I897-user 2.3.5 GINGERBREAD UCKK4 release-keys"
-
