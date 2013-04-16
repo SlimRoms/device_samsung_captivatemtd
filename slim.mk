@@ -2,7 +2,7 @@
 $(call inherit-product, vendor/slim/config/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := I897
+PRODUCT_RELEASE_NAME := captivatemtd
 
 # Inherit some common slim stuff.
 $(call inherit-product, vendor/slim/config/common_full_phone.mk)
