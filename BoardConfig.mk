@@ -18,7 +18,6 @@
 #
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/samsung/samsung-kernel-aries
 TARGET_KERNEL_CONFIG := semaphore_captivate_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
 
