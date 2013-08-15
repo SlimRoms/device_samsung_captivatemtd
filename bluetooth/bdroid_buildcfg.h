@@ -19,5 +19,8 @@
 
 #define BTM_DEF_LOCAL_NAME "Samsung Galaxy S"
 
-#endif
+#define BLE_INCLUDED FALSE
+#define BTA_GATT_INCLUDED FALSE
+#define SMP_INCLUDED FALSE
 
+#endif
