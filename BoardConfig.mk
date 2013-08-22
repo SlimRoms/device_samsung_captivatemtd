@@ -18,7 +18,7 @@
 #
 
 # Inline kernel building
-TARGET_KERNEL_CONFIG := cyanogenmod_captivatemtd_defconfig
+TARGET_KERNEL_CONFIG := semaphore_captivate_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
 
 TARGET_OTA_ASSERT_DEVICE := captivate,captivatemtd,SGH-I896,SGH-I897
