@@ -1,21 +1,21 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/slim/config/gsm.mk)
-
-# Release name
-PRODUCT_RELEASE_NAME := captivatemtd
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
-# Inherit some common slim stuff.
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/samsung/captivatemtd/full_captivatemtd.mk)
 
+# Inherit some common slim stuff.
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+
+# Specify phone tech before including full_phone
+$(call inherit-product, vendor/slim/config/gsm.mk)
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.camera.res=5MP
+
+# Release name
+PRODUCT_RELEASE_NAME := captivatemtd
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := captivatemtd
